@@ -1,0 +1,155 @@
+
+.main{
+	width: 50%;
+	display: inline-block;
+}
+.squareRed{
+	background-color: red;
+	width: 40%;
+	height: 180px;
+	display: inline-block;
+}
+.squareWhite{
+	background-color: white;
+	height: 140px;
+	width: 140px;
+	margin-top: 20px;
+	margin-left: 25%;
+}
+
+.designer{
+	height: auto;
+	width: 57%;
+	color: grey;
+	margin-left: 2%;
+	display: inline-block;
+}
+span.name {
+	font-size: 43px;
+	font-family: "Arial Black",Arial;
+	color: rgb(0, 0, 0);
+	line-height: 1.2;
+	text-align: left;
+	display: block;
+	width: 100%;
+}
+span.designer {
+	font-size: 25px;
+  	font-family: "MyriadPro";
+  	color: rgb(239, 67, 63);
+  	line-height: 1.2;
+  	text-align: left;
+  	width: 100%;
+}
+.col{
+	margin-left: 5%;
+	display: inline-block;
+	margin-bottom: 40px;
+}
+.col1{
+	width: 38%;
+	margin-left: 5%;
+	display: inline-block;
+}
+.col_vert_align_tt{
+	vertical-align: text-top;
+}
+.col_vert_align_t{
+	vertical-align: top;
+}
+.col2{
+	width: 45%;
+}
+.body{
+	width: 100%;
+}
+.info{
+
+}
+.cell{
+	display: table-cell;
+}
+
+.info .header{
+	height: 25px;
+	background-color: gray;
+}
+.header span{
+	margin: 20px;
+	text-align: left;
+}
+.body{
+	width: 100%;
+}
+.personal_data .body{
+	width: 100%;
+	margin-top: 20px;
+}
+
+.personal_data{
+	margin-top: -50px;
+}
+
+.personal_data .table{
+	width: 100%;
+	display: table;
+}
+.personal_data .row{
+
+	display: table-row;
+}
+.personal_data .cell_key{
+	width: 40%;
+	display: table-cell;
+}
+.personal_data .cell_descr{
+	width: 60%;
+	display: table-cell;
+}
+
+.about{
+
+}
+.about .body{
+
+}
+
+.education{
+
+}
+.education .table{
+	display: table;
+}
+.education .row{
+	width: 100%;
+	display: table-row;
+}
+.education .cell_rhombus{
+	margin: 18px;
+	width: 20%;
+}
+.education .cell_year{
+	width: 30%;
+	float: left;
+}
+.education .cell_education{
+	width: 50%;
+}
+.rhombus{
+	width: 18px;
+    height: 18px;
+    margin: 12px 12px 0px;
+    background: red;
+/* Rotate */
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+/* Rotate Origin */
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
