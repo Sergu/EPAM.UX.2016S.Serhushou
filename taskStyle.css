@@ -20,7 +20,7 @@
 .designer{
 	height: auto;
 	width: 57%;
-	color: grey;
+	color: gray;
 	margin-left: 2%;
 	display: inline-block;
 }
@@ -60,85 +60,101 @@ span.designer {
 .col2{
 	width: 45%;
 }
-.body{
-	width: 100%;
-}
-.info{
 
-}
 .cell{
 	display: table-cell;
 }
 
-.info .header{
-	height: 25px;
-	background-color: gray;
+.header{
+	font-size: 14px;
+	height: 20px;
+	background-color: rgb(219, 219, 219);
 }
+
+
 .header span{
 	margin: 20px;
 	text-align: left;
-}
-.body{
-	width: 100%;
-}
-.personal_data .body{
-	width: 100%;
-	margin-top: 20px;
 }
 
 .personal_data{
 	margin-top: -50px;
 }
 
-.personal_data .table{
-	width: 100%;
-	display: table;
+.personal_data_content{	
+	margin-top: 18px;
 }
-.personal_data .row{
 
-	display: table-row;
+.personal_data_content ul{	
+	padding: 0px;
+	margin: 0px;
 }
-.personal_data .cell_key{
-	width: 40%;
-	display: table-cell;
-}
-.personal_data .cell_descr{
+
+.personal_data_content li{
+	display: inline;
+	list-style-type: none;
 	width: 60%;
-	display: table-cell;
+}
+.personal_data_content li:first-child{
+	width: 40%;
+	font-family: "Arial Black";
+	font-size: 12px;
+	float: left;
 }
 
 .about{
 
 }
-.about .body{
 
+.about_content{
+	margin-top: 4px;
+	font-family: Adelle;
+}
+
+.about_content p{
+	margin: 0px;
 }
 
 .education{
 
 }
-.education .table{
-	display: table;
+
+.education_content{
+	font-size: 20px;
 }
-.education .row{
-	width: 100%;
-	display: table-row;
+
+.education_content ul:first-child{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
 }
-.education .cell_rhombus{
-	margin: 18px;
-	width: 20%;
+
+/*.education_content li:first-of-type{
+	margin-top: 20px;
+}*/
+
+.education_content li span{
+	width: 40%;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
 }
-.education .cell_year{
-	width: 30%;
-	float: left;
-}
-.education .cell_education{
+
+.educ{
 	width: 50%;
+	display: inline-block;
 }
-.rhombus{
+
+.square_block{
+	display: inline-block;
+	vertical-align: top;
+	width: 26px;
+}
+
+.square{
 	width: 18px;
     height: 18px;
-    margin: 12px 12px 0px;
+    margin: 9px 0px 0px 13px;
     background: red;
 /* Rotate */
     -webkit-transform: rotate(-45deg);
@@ -153,3 +169,90 @@ span.designer {
     -o-transform-origin: 0 100%;
     transform-origin: 0 100%;
 }
+
+
+.work{
+
+}
+
+.work_content{
+	font-size: 20px;
+}
+
+.work_content ul:first-child{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+/*.education_content li:first-of-type{
+	margin-top: 20px;
+}*/
+
+.work_content li span{
+	width: 40%;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.w  li p {
+	margin: 0px;
+}
+
+.w{
+	width: 50%;
+	display: inline-block;
+}
+
+.sills{
+}
+
+.skills_content{
+	font-family: "Arial Black";
+}
+
+.skills_content ul{
+	list-style-type: none;
+	padding: 0px;
+}
+.skills_content li span{
+	width: 48%;
+	text-align: left;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+.skills_content li{
+	margin-top: 10px;
+}
+.skills_content li:nth-child(5n){
+	margin-top: 25px;
+}
+
+.skills_block_main{
+	display: inline-block;
+	width: 50%;
+	height: 25px;
+	background-color: rgb(219, 219, 219); 
+}
+
+.index{
+	height: 25px;
+	background-color: red;
+}
+
+.leadership{
+	width: 60%;
+}
+.management{
+	width: 95%;
+}
+.writing{
+	width: 55%;
+}
+.teamwork{
+	width: 100%;
+}
+
+
