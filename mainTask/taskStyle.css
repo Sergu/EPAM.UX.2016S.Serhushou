@@ -1,31 +1,43 @@
+body{
+	margin: 0px;
+}
 
 .main{
-	width: 50%;
-	display: inline-block;
+	margin: 60px 0 0;
+	width: 60%;
+	float: left;
+	font-size: 0px;
+
 }
 .squareRed{
 	background-color: red;
 	width: 40%;
-	height: 180px;
 	display: inline-block;
+	line-height: 100px;
 }
 .squareWhite{
 	background-color: white;
-	height: 140px;
-	width: 140px;
-	margin-top: 20px;
-	margin-left: 25%;
+	height: 200px;
+	width: 200px;
+	margin: 20px 0px 20px 74px;
 }
 
 .designer{
-	height: auto;
-	width: 57%;
+
+	width: 58%;
 	color: gray;
 	margin-left: 2%;
 	display: inline-block;
+	vertical-align: bottom;
 }
-span.name {
-	font-size: 43px;
+.designer ul{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+.designer .name {
+	font-size: 56px;
 	font-family: "Arial Black",Arial;
 	color: rgb(0, 0, 0);
 	line-height: 1.2;
@@ -33,8 +45,8 @@ span.name {
 	display: block;
 	width: 100%;
 }
-span.designer {
-	font-size: 25px;
+.designer .des {
+	font-size: 44px;
   	font-family: "MyriadPro";
   	color: rgb(239, 67, 63);
   	line-height: 1.2;
@@ -43,22 +55,23 @@ span.designer {
 }
 .col{
 	margin-left: 5%;
-	display: inline-block;
 	margin-bottom: 40px;
 }
 .col1{
-	width: 38%;
+	width: 30%;
 	margin-left: 5%;
 	display: inline-block;
 }
 .col_vert_align_tt{
+	margin-top: 195px;	
 	vertical-align: text-top;
 }
 .col_vert_align_t{
 	vertical-align: top;
 }
 .col2{
-	width: 45%;
+	float: left;
+	width: 55%;
 }
 
 .cell{
@@ -66,8 +79,9 @@ span.designer {
 }
 
 .header{
+	font-family: Georgia;
 	font-size: 14px;
-	height: 20px;
+	height: 23px;
 	background-color: rgb(219, 219, 219);
 }
 
@@ -78,28 +92,37 @@ span.designer {
 }
 
 .personal_data{
-	margin-top: -50px;
+
 }
 
 .personal_data_content{	
 	margin-top: 18px;
 }
 
-.personal_data_content ul{	
-	padding: 0px;
-	margin: 0px;
+.table{
+	width: 100%;
+	display: table;
 }
 
-.personal_data_content li{
-	display: inline;
-	list-style-type: none;
+.table .row{
+	display: table-row;
+}
+
+.table .cell{
+	display: table-cell;
+	line-height: 1.2;
+}
+
+.personal_data_content .row :last-child{
+	font-size: 19px;
+	font-family: Garamond;
 	width: 60%;
 }
-.personal_data_content li:first-child{
+
+.personal_data_content .row :first-child{
 	width: 40%;
 	font-family: "Arial Black";
-	font-size: 12px;
-	float: left;
+	font-size: 17px;
 }
 
 .about{
@@ -108,7 +131,8 @@ span.designer {
 
 .about_content{
 	margin-top: 4px;
-	font-family: Adelle;
+	font-size: 18px;
+	font-family: Georgia;
 }
 
 .about_content p{
@@ -120,7 +144,9 @@ span.designer {
 }
 
 .education_content{
-	font-size: 20px;
+	margin: 15px 0 20px 0;
+	font-size: 0px;
+
 }
 
 .education_content ul:first-child{
@@ -129,12 +155,18 @@ span.designer {
 	list-style-type: none;
 }
 
+.margin{
+	margin-top: 30px;
+}
+
 /*.education_content li:first-of-type{
 	margin-top: 20px;
 }*/
 
+
 .education_content li span{
 	width: 40%;
+	font-size: 18px;
 	text-align: center;
 	display: inline-block;
 	vertical-align: top;
@@ -142,31 +174,24 @@ span.designer {
 
 .educ{
 	width: 50%;
+	font-size: 18px;
 	display: inline-block;
 }
 
 .square_block{
 	display: inline-block;
 	vertical-align: top;
-	width: 26px;
+	width: 10%;
 }
 
 .square{
 	width: 18px;
     height: 18px;
-    margin: 9px 0px 0px 13px;
+    margin: 6px 0px 0px 13px;
     background: red;
-/* Rotate */
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
+
     transform: rotate(-45deg);
-/* Rotate Origin */
-    -webkit-transform-origin: 0 100%;
-    -moz-transform-origin: 0 100%;
-    -ms-transform-origin: 0 100%;
-    -o-transform-origin: 0 100%;
+
     transform-origin: 0 100%;
 }
 
@@ -176,7 +201,8 @@ span.designer {
 }
 
 .work_content{
-	font-size: 20px;
+	margin: 15px 0;
+	font-size: 0px;
 }
 
 .work_content ul:first-child{
@@ -190,18 +216,31 @@ span.designer {
 }*/
 
 .work_content li span{
-	width: 40%;
+	width: 35%;
+	font-size: 20px;
 	text-align: center;
 	display: inline-block;
 	vertical-align: top;
 }
 
-.w  li p {
+.st_company{
+	font-size: 19px;
+	color: red;
+}
+.st_job{
+	font-size: 19px;
+	font-family: Arial;
+}
+.st_descr{
+	font-size: 18px;
+	font-family: Georgia;
+	color: #706C6C;
 	margin: 0px;
 }
 
 .w{
-	width: 50%;
+	font-size: 20px;
+	width: 55%;
 	display: inline-block;
 }
 
@@ -209,12 +248,15 @@ span.designer {
 }
 
 .skills_content{
+	margin: 30px 0 0;
 	font-family: "Arial Black";
+	font-size: 12px;
 }
 
 .skills_content ul{
 	list-style-type: none;
 	padding: 0px;
+	margin: 0px;
 }
 .skills_content li span{
 	width: 48%;
@@ -226,19 +268,19 @@ span.designer {
 .skills_content li{
 	margin-top: 10px;
 }
-.skills_content li:nth-child(5n){
+.skills_content li:nth-child(4n+1){
 	margin-top: 25px;
 }
 
 .skills_block_main{
 	display: inline-block;
 	width: 50%;
-	height: 25px;
+	height: 20px;
 	background-color: rgb(219, 219, 219); 
 }
 
 .index{
-	height: 25px;
+	height: 20px;
 	background-color: red;
 }
 
@@ -246,13 +288,35 @@ span.designer {
 	width: 60%;
 }
 .management{
-	width: 95%;
-}
-.writing{
-	width: 55%;
+	width: 92%;
 }
 .teamwork{
 	width: 100%;
 }
-
-
+.writing{
+	width: 55%;
+}
+.photoshop{
+	width: 96%;
+}
+.html{
+	width: 57%;
+}
+.javascript{
+	width: 67%;
+}
+.dreamweaver{
+	width: 80%;
+}
+.logic{
+	width: 100%;
+}
+.artistic{
+	width: 53%;
+}
+.teamworks{
+	width: 94%;
+}
+.intuition{
+	width: 98%;
+}
