@@ -1,0 +1,41 @@
+body{
+}
+.table{
+	display: table;
+	width: 400px;
+	border: solid;
+}
+.tableHead{
+	display: table-header-group;
+	font-family: Arial;
+}
+.headValue{
+	width: 30%;
+}
+.headDescr{
+	width: 70%;
+}
+.row{
+	display: table-row;
+	max-width: 100%;
+}
+.odd{
+	background-color: purple;
+	border: solid;
+}
+.even{
+	background-color: white;
+}
+.cell{
+	display: table-cell;
+	margin: 4%;
+	max-width: 300px;
+}
+.value{
+
+	min-width: 30%;
+}
+.descr{
+	height: auto;
+	min-width: 70%;
+}

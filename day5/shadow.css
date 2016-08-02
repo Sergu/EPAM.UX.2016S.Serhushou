@@ -1,0 +1,57 @@
+.shadow_inner{
+	box-shadow: inset 0 0 20px gray;
+}
+.bord{
+	margin: 100px;
+	width: 700px;
+
+}
+table{
+	width: 100%;
+	border-radius: 10px;
+	border-collapse: collapse;
+	border: 2px solid #000;
+	box-shadow: 0 0 10px #000;
+}
+
+thead tr:first{
+	width: 12%;
+}
+
+td{
+	border: 1px solid black;
+}
+thead{
+	background-color: #2F2B2B;
+	color: white;
+}
+
+thead tr th:first-child{
+	border-radius: 10px;
+}
+thead tr th:last-child{
+	
+}
+thead th{
+	text-shadow: 5px 0px 30px #004;
+}
+
+tbody tr:hover{
+	background: linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(255,255,255,1) 100%);
+	background-attachment: fixed;
+}
+table tbody tr td:first-child:first-letter{
+	font-size: 20px;
+	color: red;
+	font-family: arial;
+}
+table
+
+tbody tr td:after{
+	content: "(mln)";
+} 
+tbody tr td:first-child:after{
+	content: "($)";
+}
+
+

@@ -1,0 +1,45 @@
+body{
+	background-image : url(background.gif); 
+}
+span{
+	font-size: 250%;
+}
+
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	width : 55%;
+	height : auto;
+	background-color: orange;
+	padding: 40px;
+	border : solid;
+}
+.cat{
+	float : left;
+	width : 200 px;
+	height : 300 px;
+}
+.p1{
+	font-family: Georgia, Arial;
+	font-size: 150%;
+}
+.span1{
+	font-family: Arial;
+	color : red;
+}
+.p2{
+	font-family: Arial, Georgia;
+	font-size: 170%;
+}
+.span2{
+	font-family: sans-serif;
+	color: green;
+}
+.p3{
+	font-family: serif, sans-serif;
+	font-size: 165%;
+}
+.span3{
+	font-family: Georgia;
+	color: black;
+}
