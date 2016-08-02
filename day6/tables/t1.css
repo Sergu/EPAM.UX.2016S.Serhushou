@@ -4,19 +4,37 @@
 	margin-left: 10%;
 }
 
-
 .table1{
-	width: 100%;
+	width: 80%;
+	margin-left: 10%;
+	border-spacing: 0px;
+}
+
+.header{
+	padding: 10px 0 0 10px;
+	vertical-align: top;
+}
+
+.header p{
+	font-family: arial;
+	font-size: 16px;
+	color: gray;
+}
+
+.table_cell{
+	padding: 10px 0 0;
+	vertical-align: top;
 }
 
 .f_tr{
-	background-color: gray;
+	background-color: #DECECE;
 }
 
 .f_tr img{
 	float: left;
-	width: 300px;
+	width: 200px;
 	height: 50px;
+	margin: 10px;
 }
 
 .f_tr ul{
@@ -25,6 +43,7 @@
 
 .s_tr ul{
 	padding: 0px;
+	margin: 5px;
 }
 
 .s_tr{
@@ -39,11 +58,15 @@
 }
 
 .s_tr li:hover{
-	background-color: purple;
+	background-color: #DECECE;
 }
 
 .s_tr td:first-child{
 	width: 30%;
+}
+
+.th_tr{
+	padding-top:10px;
 }
 
 .sec_row{

@@ -1,0 +1,18 @@
+.table2{
+	width: 100%;
+	border: 6px solid #DECECE;
+	background-color: black;
+	color: white;
+}
+
+.table2 td{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin: 20px 0 20px 0;
+}
+
+.table2 tr:hover{
+	background-color: #DECECE;
+}
+

@@ -1,0 +1,14 @@
+.table3{
+	width: 100%;
+	border: double;
+	border-collapse: collapse;
+}
+.table3 td{
+	height: 30px;
+	padding-left: 5px;
+	border: 1px solid black;
+}
+
+.table3 tr:first-child{
+	background-color: #DECECE;
+}
