@@ -1,10 +1,20 @@
+html,body{
+	height: 100%;
+	margin: 0;
+}
+
 body{
 	margin: 0px;
+	background-color: gray;
 }
-.super_block{
+.super-block{
 	margin: auto;
 	width: 1000px;
 	background-color:white;
+}
+
+.wrapper{
+	min-height: calc(100vh - 70px);
 }
 
 .row{
@@ -19,22 +29,24 @@ body{
 	font-size: 0px;
 
 }
-.squareRed{
+.square-red{
 	background-color: red;
-	width: 44%;
+	width: 230px;
+	height: 180px;
 	display: inline-block;
 	line-height: 100px;
+	cursor: pointer;
 }
-.squareWhite{
+.square-white{
 	background-color: white;
-	height: 200px;
-	width: 65%;
-	margin: 20px 0px 20px 74px;
+	height: 160px;
+	width: 155px;
+	margin: 10px 0px 10px 62px;
 }
 
 .designer{
 
-	width: 52%;
+	width: 53.9%;
 	color: gray;
 	margin-left: 4%;
 	display: inline-block;
@@ -42,7 +54,7 @@ body{
 }
 
 .designer h1{
-	font-size: 69.9px;
+	font-size: 53.7px;
 	font-family: Calibri,Arial;
 	text-transform: uppercase;
 	color: rgb(0, 0, 0);
@@ -50,14 +62,16 @@ body{
 	text-align: left;
 	line-height: 1.2;
 	margin: 0px;
+	word-wrap:break-word;
 }
 .designer h2{
 	margin: 0px;
-	font-size: 36px;
+	font-size: 28px;
   	font-family: Arial;
   	text-transform: uppercase;
   	color: rgb(239, 67, 63);
   	font-weight: lighter;
+  	word-wrap:break-word;
 }
 
 
@@ -65,18 +79,16 @@ body{
 	margin-left: 6%;
 	margin-bottom: 40px;
 }
-.col1{
+.column-right{
 	width: 34%;
 	display: inline-block;
 }
-.col_margin_top{
-	margin-top: 195px;	
+.col-margin-top{
+	margin-top: 158px;	
 	vertical-align: text-top;
 }
-.col_vert_align_t{
-	vertical-align: top;
-}
-.col2{
+
+.column-left{
 	float: left;
 	width: 49%;
 }
@@ -97,50 +109,61 @@ body{
 	height: 23px;
 	overflow:hidden;
 	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.personal-data{
 
 }
 
-.personal_data{
-
-}
-
-.personal_data_content{	
+.personal-data-content{	
 	margin-top: 25px;
 }
 
-.personal_data_content fieldset{
+.personal-data-content fieldset{
 	border: 0px;
 	margin-top: 0px;
 	padding: 0px;
+	font-size:0px;
 }
 
-.personal_data_content label{
+.personal-data-content label{
 	display: inline-block;
 	width: 37%;
-	font-size: 20px;
+	font-size: 18px;
 	font-family: Calibri;
 	font-weight: bold;
+	overflow:hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
-.personal_data_content input{
+.personal-data-content input{
 	font-family: Calibri;
+	font-weight: bold;
 	color: #3A3535;
-	font-size: 16px;
+	font-size: 18px;
 	width: 61%;
+	border: 0px;
+	background-color:white;
+	overflow:hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	vertical-align: top;
 }
 
 .about{
 
 }
 
-.about_content{
+.about-content{
 	margin-top: 6px;
 	font-size: 18px;
 	font-family: Georgia;
 	font-weight: bolder;
 }
 
-.about_content p{
+.about-content p{
 	margin: 0px;
 }
 
@@ -148,19 +171,19 @@ body{
 
 }
 
-.education_content{
+.education-content{
 	margin: 15px 0 20px 0;
 	font-size: 0px;
 	text-align: center;
 }
 
-.education_content .child{
+.education-content .child{
 	font-size: 19px;
 	font-family: Calibri;
 	font-weight: bolder;
 }
 
-.education_content .child:before{
+.education-content .child:before{
 	content: '';
 	float: left;
 	width: 18px;
@@ -174,14 +197,14 @@ body{
 
 }
 
-.education_content ul:first-child{
+.education-content ul:first-child{
 	padding: 0px;
 	margin: 0px;
 	list-style-type: none;
 }
 
 
-.education_content .child p{
+.education-content .child p{
 	width: 38.3%;
 	padding: 0px;
 	margin: 0px;
@@ -190,11 +213,11 @@ body{
 	font-size: 22px;
 }
 
-.education_content .child{
+.education-content .child{
 	margin-bottom: 20px;
 }
 
-.education_content .child:last-child{
+.education-content .child:last-child{
 	margin-bottom: 0xp;
 }
 
@@ -203,7 +226,7 @@ body{
 	padding: 0px;
 	overflow:hidden;
 	white-space: nowrap;
-
+	text-overflow: ellipsis;
 }
 
 .child .master{
@@ -217,7 +240,7 @@ body{
 	font-size: 19px;
 	font-family: Arial;
 	font-weight: bold;
-	letter-spacing: 4px;
+	letter-spacing: 1px;
 }
 
 .child .description{
@@ -227,7 +250,7 @@ body{
 	margin: 0px;
 }
 
-.child .company_description{
+.child .company-description{
 	font-size: 22px;
 	font-family: Calibri;
 	color: #706C6C;
@@ -235,9 +258,9 @@ body{
 	padding: 0px;
 }
 
-.education_content .child div{
+.education-content .child div{
 	text-align: left;
-	width: 54%;
+	width: 50%;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -248,7 +271,7 @@ body{
 	display: inline-block;
 }
 
-.square_block{
+.square-block{
 	display: inline-block;
 	vertical-align: top;
 	width: 10%;
@@ -258,25 +281,25 @@ body{
 
 }
 
-.work_content{
+.work-content{
 	margin: 15px 0 0;
 	font-size: 0px;
 }
 
-.work_content ul{
+.work-content ul{
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
 }
 
-.work_content .child{
+.work-content .child{
 	font-size: 19px;
 	font-family: Calibri;
 	font-weight: bolder;
 	margin-bottom: 20px;
 }
 
-.work_content .child:before{
+.work-content .child:before{
 	content: '';
 	float: left;
 	width: 18px;
@@ -292,8 +315,8 @@ body{
 
 
 
-.work_content .year{
-	width: 20%;
+.work-content .year{
+	width: 25%;
 	padding: 0px;
 	margin: 0px;
 	text-align: center;
@@ -301,9 +324,9 @@ body{
 	font-size: 22px;
 }
 
-.work_content .child div{
+.work-content .child div{
 	text-align: left;
-	width: 75%;
+	width: 65%;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -312,18 +335,18 @@ body{
 .sills{
 }
 
-.skills_content{
+.skills-content{
 	margin: 30px 0 0;
 	font-size: 0px;
 
 }
 
-.skills_content ul{
+.skills-content ul{
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
 }
-.skills_content li p{
+.skills-content li p{
 	width: 48%;
 	text-align: left;
 	display: inline-block;
@@ -335,14 +358,14 @@ body{
 	margin: 0px;
 }
 
-.skills_content li{
+.skills-content li{
 	margin-top: 10px;
 }
-.skills_content li:nth-child(4n+1){
+.skills-content li:nth-child(4n+1){
 	margin-top: 25px;
 }
 
-.skills_block_main{
+.skills-block-main{
 	display: inline-block;
 	vertical-align: top;
 	width: 52%;
@@ -361,7 +384,7 @@ body{
 	left: 6%;
 	font-size: 0px;
 	width: 88%;
-	height: 150px;
+	height: 50px;
 	display: inline-block;
 	margin-top: 20px;
 	margin-left: 6%;
@@ -402,11 +425,13 @@ body{
 	background-size: 100%;
 }
 
-.footer h5{
+.footer a{
 	font-size: 20px;
 	font-family: Calibri;
 	font-weight: bold;
 	margin-top: 4px;
+	text-decoration: none;
+	color: black;
 
 }
 
