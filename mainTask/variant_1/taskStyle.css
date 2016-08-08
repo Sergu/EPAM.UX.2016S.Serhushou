@@ -35,7 +35,11 @@ body{
 	height: 180px;
 	display: inline-block;
 	line-height: 100px;
-	cursor: pointer;
+}
+
+.square-red:hover{
+	background-color: #CD0202;
+
 }
 .square-white{
 	background-color: white;
@@ -181,6 +185,7 @@ body{
 	font-size: 19px;
 	font-family: Calibri;
 	font-weight: bolder;
+	margin-bottom: 20px;
 }
 
 .education-content .child:before{
@@ -213,12 +218,15 @@ body{
 	font-size: 22px;
 }
 
-.education-content .child{
-	margin-bottom: 20px;
-}
-
 .education-content .child:last-child{
 	margin-bottom: 0xp;
+}
+
+.education-content .child div{
+	text-align: left;
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .child div h4{
@@ -256,13 +264,6 @@ body{
 	color: #706C6C;
 	margin: 0px;
 	padding: 0px;
-}
-
-.education-content .child div{
-	text-align: left;
-	width: 50%;
-	display: inline-block;
-	vertical-align: top;
 }
 
 .educ{
@@ -452,16 +453,8 @@ body{
 	background-size: 100%;
 }
 
-.footer ul{
-	padding: 0px;
-	margin:0px;
-}
-
-.footer li{
-	height: auto;
-	width: 33%;
-	display: inline-block;
-	float: right;
+.footer a:hover{
+	color: #CD0202;
 }
 
 .circle{

@@ -36,8 +36,12 @@ body{
 	height: 180px;
 	display: inline-block;
 	line-height: 100px;
-	cursor: pointer;
 }
+.square-red:hover{
+	background-color: #CD0202;
+
+}
+
 .square-white{
 	background-color: white;
 	height: 160px;
@@ -456,16 +460,8 @@ body{
 	background-size: 100%;
 }
 
-.footer ul{
-	padding: 0px;
-	margin:0px;
-}
-
-.footer li{
-	height: auto;
-	width: 33%;
-	display: inline-block;
-	float: right;
+.footer a:hover{
+	color: #CD0202;
 }
 
 .circle{
