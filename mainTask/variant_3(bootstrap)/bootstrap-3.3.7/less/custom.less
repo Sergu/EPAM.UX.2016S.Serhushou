@@ -5,35 +5,6 @@ html,body{
 
 @image-dir: "../../images/";
 
-@conteiner-backgriund-color: #ffffff;
-
-@header-background-color:	rgb(219, 219, 219);	
-@header-color: #000000;
-@header-font-family: Calibri;
-
-
-@logo-designer-name-font-family: Calibri;
-@logo-designer-proffession-font-family: Arial;
-@logo-designer-proffession-color:	rgb(239, 67, 63);
-
-@logo-outside-color: #ff0000;
-@logo-inside-color: #ffffff;
-
-@personal-data-font-family: Calibri;
-@personal-data-input-background-color: #ffffff;
-
-@education-font: Calibri;
-@master-font: Calibri;
-@university-font: Arial;
-@description-font: Calibri;
-@company-font: Calibri;
-
-@about-font-family: Georgia;
-
-
-@formal-education-master-color: #FF7C7C;
-
-
 
 .word-carry{
 	overflow:hidden;
@@ -41,10 +12,9 @@ html,body{
 	text-overflow: ellipsis;
 }
 
-.col-md-7, .col-md-11{
+.col-md-7, .col-md-11, .col-md-5, .col-md-10{
 	padding: 0px;
 }
-
 
 .square{
 	content: '';
@@ -59,21 +29,29 @@ html,body{
     transform-origin: 0 100%;
 }
 
-.row{
-	margin-bottom: 40px;
+.circle(@url-image){
+
+			content: '';
+			float: left;
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			background-image: @url-image;
+			background-size: 100%;
 }
+
 
 .container{
 	width: 1000px;
-	background-color: @conteiner-backgriund-color;
+	background-color: @container-backgriund-color;
+	margin: auto;
 
 	.wrapper{
-		min-height: 100%;
-		margin-bottom: -50px;
+		min-height: calc(~"100vh - 70px");
+	}
 
-		.push{
-			height: 50px;
-		}
+	.row{
+		margin-bottom: 40px;
 	}
 }
 
@@ -315,16 +293,15 @@ html,body{
 
 		.child{
 			font-size: 19px;
-			font-family: Calibri;
+			font-family: @description-font;
 			font-weight: bolder;
 			margin-bottom: 20px;
-		}
 
-		.child {
 			&:before{
 				.square;
 			}
 		}
+
 
 		.year{
 			width: 25%;
@@ -370,7 +347,7 @@ html,body{
 					text-align: left;
 					display: inline-block;
 					vertical-align: top;
-					font-family: "Arial";
+					font-family: @university-font;
 					font-weight: bolder;
 					font-size: 14px;
 					padding: 0px;
@@ -381,6 +358,48 @@ html,body{
 					height: 20px;
 					width: 50%;
 					display: inline-block;
+
+					.progress-bar-danger{
+						background-color: @logo-outside-color;
+					}
+
+				.leadership{
+					width: 60%;
+				}
+				.management{
+					width: 92%;
+				}
+				.team-work{
+					width: 100%;
+				}
+				.writing{
+					width: 55%;
+				}
+				.photoshop{
+					width: 96%;
+				}
+				.html{
+					width: 57%;
+				}
+				.javascript{
+					width: 67%;
+				}
+				.dreamweaver{
+					width: 80%;
+				}
+				.logic{
+					width: 100%;
+				}
+				.artistic{
+					width: 53%;
+				}
+				.teamworks{
+					width: 94%;
+				}
+				.intuition{
+					width: 98%;
+				}
+	
 				}
 			}	
 		}
@@ -399,7 +418,7 @@ html,body{
 
 	a{
 		font-size: 20px;
-		font-family: Calibri;
+		font-family: @company-font;
 		font-weight: bold;
 		margin-top: 4px;
 		text-decoration: none;
@@ -418,13 +437,7 @@ html,body{
 		margin-left: 4px;
 
 		&:before{
-			content: '';
-			float: left;
-			width: 35px;
-			height: 35px;
-			border-radius: 50%;
-			background-image: url("@{image-dir}/twitter.png");
-			background-size: 100%;
+			.circle(url("@{image-dir}/twitter.png"));
 		}
 	}
 
@@ -435,13 +448,7 @@ html,body{
 		float: left;
 
 		&:before{
-			content: '';
-			float: left;
-			width: 35px;
-			height: 35px;
-			border-radius: 50%;
-			background-image: url("@{image-dir}/phone.png");
-			background-size: 100%;
+			.circle(url("@{image-dir}/phone.png"));
 		}
 	}
 
@@ -452,13 +459,7 @@ html,body{
 		float: left;
 
 		&:before{
-			content: '';
-			float: left;
-			width: 35px;
-			height: 35px;
-			border-radius: 50%;
-			background-image: url("@{image-dir}/url.png");
-			background-size: 100%;
+			.circle(url("@{image-dir}/url.png"));
 		}
 	}
 }

@@ -6731,7 +6731,9 @@ body {
   text-overflow: ellipsis;
 }
 .col-md-7,
-.col-md-11 {
+.col-md-11,
+.col-md-5,
+.col-md-10 {
   padding: 0px;
 }
 .square {
@@ -6744,19 +6746,16 @@ body {
   transform: rotate(-45deg);
   transform-origin: 0 100%;
 }
-.row {
-  margin-bottom: 40px;
-}
 .container {
   width: 1000px;
   background-color: #ffffff;
+  margin: auto;
 }
 .container .wrapper {
-  min-height: 100%;
-  margin-bottom: -50px;
+  min-height: calc(100vh - 70px);
 }
-.container .wrapper .push {
-  height: 50px;
+.container .row {
+  margin-bottom: 40px;
 }
 .block {
   background-color: red;
@@ -7009,7 +7008,7 @@ body {
   text-align: left;
   display: inline-block;
   vertical-align: top;
-  font-family: "Arial";
+  font-family: Arial;
   font-weight: bolder;
   font-size: 14px;
   padding: 0px;
@@ -7019,6 +7018,45 @@ body {
   height: 20px;
   width: 50%;
   display: inline-block;
+}
+.skills .skills-content ul li .progress .progress-bar-danger {
+  background-color: #ff0000;
+}
+.skills .skills-content ul li .progress .leadership {
+  width: 60%;
+}
+.skills .skills-content ul li .progress .management {
+  width: 92%;
+}
+.skills .skills-content ul li .progress .team-work {
+  width: 100%;
+}
+.skills .skills-content ul li .progress .writing {
+  width: 55%;
+}
+.skills .skills-content ul li .progress .photoshop {
+  width: 96%;
+}
+.skills .skills-content ul li .progress .html {
+  width: 57%;
+}
+.skills .skills-content ul li .progress .javascript {
+  width: 67%;
+}
+.skills .skills-content ul li .progress .dreamweaver {
+  width: 80%;
+}
+.skills .skills-content ul li .progress .logic {
+  width: 100%;
+}
+.skills .skills-content ul li .progress .artistic {
+  width: 53%;
+}
+.skills .skills-content ul li .progress .teamworks {
+  width: 94%;
+}
+.skills .skills-content ul li .progress .intuition {
+  width: 98%;
 }
 .footer {
   position: relative;
