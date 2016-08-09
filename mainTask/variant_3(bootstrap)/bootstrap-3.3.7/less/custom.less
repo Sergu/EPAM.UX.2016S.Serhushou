@@ -1,6 +1,62 @@
 
-body{
+html,body{
 	background-color: gray;
+}
+
+@image-dir: "../../images/";
+
+@conteiner-backgriund-color: #ffffff;
+
+@header-background-color:	rgb(219, 219, 219);	
+@header-color: #000000;
+@header-font-family: Calibri;
+
+
+@logo-designer-name-font-family: Calibri;
+@logo-designer-proffession-font-family: Arial;
+@logo-designer-proffession-color:	rgb(239, 67, 63);
+
+@logo-outside-color: #ff0000;
+@logo-inside-color: #ffffff;
+
+@personal-data-font-family: Calibri;
+@personal-data-input-background-color: #ffffff;
+
+@education-font: Calibri;
+@master-font: Calibri;
+@university-font: Arial;
+@description-font: Calibri;
+@company-font: Calibri;
+
+@about-font-family: Georgia;
+
+
+@formal-education-master-color: #FF7C7C;
+
+
+
+.word-carry{
+	overflow:hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.col-md-7, .col-md-11{
+	padding: 0px;
+}
+
+
+.square{
+	content: '';
+	float: left;
+	width: 18px;
+    height: 18px;
+    margin: 6px 0px 0px 13px;
+    background: red;
+
+    transform: rotate(-45deg);
+
+    transform-origin: 0 100%;
 }
 
 .row{
@@ -8,7 +64,17 @@ body{
 }
 
 .container{
-	background-color: white;
+	width: 1000px;
+	background-color: @conteiner-backgriund-color;
+
+	.wrapper{
+		min-height: 100%;
+		margin-bottom: -50px;
+
+		.push{
+			height: 50px;
+		}
+	}
 }
 
 .block{
@@ -19,39 +85,39 @@ body{
 
 .header{
 	height: 23px;
-	background-color: rgb(219, 219, 219);
+	background-color: @header-background-color;
 
 	h4{
 		margin: 0 0 0 20px;
-		font-family: Calibri;
+		font-family: @header-font-family;
+		color: @header-color;
+		font-weight: bold; 
 		text-transform: uppercase;
 		font-size: 18px;
 		height: 23px;
-		overflow:hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
+		.word-carry
 	}
 }
 
-.main{
+.logo{
 
 	margin: 60px 0 0;
 	padding: 0px;
 
 	.square-red{
-		background-color: red;
+		background-color: @logo-outside-color;
 		width: 230px;
 		height: 180px;
 		display: inline-block;
 		line-height: 100px;
-	}
 
-	.square-red:hover{
-		background-color: #CD0202;
+		&:hover{
+			background-color: #CD0202;
+		}
 	}
 
 	.square-white{
-		background-color: white;
+		background-color: @logo-inside-color;
 		height: 160px;
 		width: 155px;
 		margin: 10px 0px 10px 62px;
@@ -59,29 +125,30 @@ body{
 
 	.designer{
 
-		width: 60%;
+		width: 57%;
 		color: gray;
-		margin-left: 4%;
+		margin-left: 2%;
 		display: inline-block;
 		vertical-align: bottom;
 
 		h1{
-			font-size: 53.7px;
-			font-family: Calibri,Arial;
+			font-size: 60px;
+			font-family: @logo-designer-name-font-family;
+			font-weight: bold;
 			text-transform: uppercase;
 			color: rgb(0, 0, 0);
-			line-height: 1.2;
+			line-height: 1.1;
 			text-align: left;
-			line-height: 1.2;
 			margin: 0px;
 			word-wrap:break-word;
 		}
 		h2{
+
 			margin: 0px;
 			font-size: 28px;
-  			font-family: Arial;
+  			font-family: @logo-designer-proffession-font-family;
   			text-transform: uppercase;
-  			color: rgb(239, 67, 63);
+  			color: @logo-designer-proffession-color;
   			font-weight: lighter;
   			word-wrap:break-word;
 		}
@@ -89,7 +156,7 @@ body{
 }
 
 .col-margin-top{
-	margin-top: 158px;	
+	margin-top: 164px;	
 	vertical-align: text-top;
 }
 
@@ -104,30 +171,28 @@ body{
 		margin-top: 0px;
 		padding: 0px;
 		font-size:0px;
+		height: 20px;
 	}
 
 	label{
 		display: inline-block;
 		width: 37%;
 		font-size: 18px;
-		font-family: Calibri;
+		font-family: @personal-data-font-family;
 		font-weight: bold;
-		overflow:hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
+		.word-carry;
 	}
 
 	input{
-		font-family: Calibri;
-		font-weight: bold;
+		font-family: @personal-data-font-family;
+		font-weight: lighter;
+		letter-spacing: -0.5px;
 		color: #3A3535;
 		font-size: 18px;
 		width: 61%;
 		border: 0px;
-		background-color:white;
-		overflow:hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
+		background-color:@personal-data-input-background-color;
+		.word-carry;
 		vertical-align: top;
 	}
 }
@@ -136,8 +201,8 @@ body{
 .about{
 	.about-content{
 		margin-top: 6px;
-		font-size: 18px;
-		font-family: Georgia;
+		font-size: 16px;
+		font-family: @about-font-family;
 		font-weight: bolder;
 
 		p{
@@ -153,51 +218,43 @@ body{
 		font-size: 0px;
 		text-align: center;
 
-		.child div{
-			text-align: left;
-			width: 50%;
-			display: inline-block;
-			vertical-align: top;
-		}
-
 		.child{
 			font-size: 19px;
-			font-family: Calibri;
+			font-family: @education-font;
 			font-weight: bolder;
 			margin-bottom: 20px;
+
+			.education-year{
+				width: 38.3%;
+				padding: 0px;
+				margin: 0px;
+				text-align: center;
+				float: left;
+				font-size: 22px;
+			}
+
+			&:before{
+				.square
+			}
+
+			&:last-child{
+				margin-bottom: 0xp;
+			}
+
+			div{
+				text-align: left;
+				width: 50%;
+				display: inline-block;
+				vertical-align: top;
+			}
 		}
 
-		.child:before{
-			content: '';
-			float: left;
-			width: 18px;
-    		height: 18px;
-    		margin: 6px 0px 0px 13px;
-    		background: red;
-
-    		transform: rotate(-45deg);
-
-    		transform-origin: 0 100%;
-
-		}
-
-		ul:first-child{
-			padding: 0px;
-			margin: 0px;
-			list-style-type: none;
-		}
-
-		.child p{
-			width: 38.3%;
-			padding: 0px;
-			margin: 0px;
-			text-align: center;
-			float: left;
-			font-size: 22px;
-		}
-
-		.child:last-child{
-			margin-bottom: 0xp;
+		ul {
+			&:first-child{
+				padding: 0px;
+				margin: 0px;
+				list-style-type: none;
+			}
 		}
 	}
 }
@@ -205,40 +262,42 @@ body{
 .child {
 
 	.master{
-		font-family: Calibri;
-		font-size: 22px;
-		color: #FF7C7C;
+		font-family: @master-font;
+		font-size: 19px;
+		color: @formal-education-master-color;
 		text-transform: uppercase;
 	}
 
 	.university{
-		font-size: 19px;
-		font-family: Arial;
+		font-size: 16px;
+		font-family: @university-font;
 		font-weight: bold;
 		letter-spacing: 1px;
 	}
 
 	.description{
-		font-size: 22px;
-		font-family: Calibri;
+		font-size: 21px;
+		font-family: @description-font;
+		line-height: 1.1;
 		color: #706C6C;
 		margin: 0px;
 	}
 
 	.company-description{
-		font-size: 22px;
-		font-family: Calibri;
+		font-size: 21px;
+		font-family: @company-font;
 		color: #706C6C;
 		margin: 0px;
 		padding: 0px;
+		line-height: 1.1;
 	}
 
-	div h4{
-		margin: 0px;
-		padding: 0px;
-		overflow:hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
+	div{ 
+		h4{
+			margin: 0px;
+			padding: 0px;
+			.word-carry
+		}
 	}
 }
 
@@ -261,18 +320,10 @@ body{
 			margin-bottom: 20px;
 		}
 
-		.child:before{
-			content: '';
-			float: left;
-			width: 18px;
-    		height: 18px;
-    		margin: 6px 0px 0px 13px;
-    		background: red;
-
-    		transform: rotate(-45deg);
-
-    		transform-origin: 0 100%;
-
+		.child {
+			&:before{
+				.square;
+			}
 		}
 
 		.year{
@@ -284,11 +335,13 @@ body{
 			font-size: 22px;
 		}
 
-		.child div{
-			text-align: left;
-			width: 65%;
-			display: inline-block;
-			vertical-align: top;
+		.child{
+			div{
+				text-align: left;
+				width: 65%;
+				display: inline-block;
+				vertical-align: top;
+			}
 		}
 	}
 }
@@ -303,35 +356,109 @@ body{
 			list-style-type: none;
 			padding: 0px;
 			margin: 0px;
-		}
 
-		li p{
-			width: 48%;
-			text-align: left;
-			display: inline-block;
-			vertical-align: top;
-			font-family: "Arial";
-			font-weight: bolder;
-			font-size: 14px;
-			padding: 0px;
-			margin: 0px;
-		}
+			li{
 
-		li{
-			margin-top: 10px;
-		}
+				margin-top: -5px;
 
-		li:nth-child(4n+1){
-			margin-top: 25px;
-		}
+				&:nth-child(4n+1){
+					margin-top: 25px;
+				}
 
-		progress{
-			height: 20px;
-			width: 50%;
-			margin: 0px;
+				p{
+					width: 48%;
+					text-align: left;
+					display: inline-block;
+					vertical-align: top;
+					font-family: "Arial";
+					font-weight: bolder;
+					font-size: 14px;
+					padding: 0px;
+					margin: 0px;
+				}
+
+				.progress{
+					height: 20px;
+					width: 50%;
+					display: inline-block;
+				}
+			}	
 		}
-		.progress-bar-danger{
-			height: 20px;
+	}
+}
+
+.footer{
+	position: relative;
+	bottom: 0px;
+	font-size: 0px;
+	width: 94%;
+	height: 50px;
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 6%;
+
+	a{
+		font-size: 20px;
+		font-family: Calibri;
+		font-weight: bold;
+		margin-top: 4px;
+		text-decoration: none;
+		color: black;
+
+		&:hover{
+			color: #CD0202;
+		}
+	}
+
+	.name{
+		font-size: 12px;
+		display: inline-block;
+		width: 36%;
+		float: left;
+		margin-left: 4px;
+
+		&:before{
+			content: '';
+			float: left;
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			background-image: url("@{image-dir}/twitter.png");
+			background-size: 100%;
+		}
+	}
+
+	.phone{
+		font-size: 19px;
+		display: inline-block;
+		width: 35%;
+		float: left;
+
+		&:before{
+			content: '';
+			float: left;
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			background-image: url("@{image-dir}/phone.png");
+			background-size: 100%;
+		}
+	}
+
+	.url{
+		font-size: 12px;
+		display: inline-block;
+		width: 28%;
+		float: left;
+
+		&:before{
+			content: '';
+			float: left;
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			background-image: url("@{image-dir}/url.png");
+			background-size: 100%;
 		}
 	}
 }
